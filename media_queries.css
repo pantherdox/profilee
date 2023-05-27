@@ -1,0 +1,79 @@
+@media screen and (max-width: 479px) {
+    .main-div h4{
+    font-size: 0.8rem;
+    letter-spacing: 10px;
+    color: rgb(109, 108, 108);
+}
+
+.main-div h1{
+    font-size: 5rem;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.main-div p{
+    line-height: 44px;
+    font-size: 1rem;
+    color: rgb(150, 150, 150);
+    letter-spacing: 1.5px;
+    font-style: italic;
+}
+
+.edu-heading{
+    text-align: center;
+    margin-block: 0px;
+}
+
+.edu-heading h1{
+    font-size: 3rem;
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+.study{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 50px;
+    align-items: center;
+}
+
+.line{
+    display: none;
+}
+
+.downn{
+    display: none;
+}
+
+.downnn{
+    display: none;
+}
+
+.skills{
+    gap: 100px;
+    height: 150vh;
+}
+
+.skill-head h1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.skill-set{
+    justify-content: center;
+}
+
+#skills-heading{
+    font-size: 3rem;
+}
+
+.skills-logo-group{
+    gap: 100px;
+}
+
+
+}

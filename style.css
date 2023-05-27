@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,700;0,800;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1180px;
+    padding-inline: var(--inline-padding);
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(150, 150, 150);
+}
+
+li{
+    list-style: none;
+}
+
+header{
+    background: linear-gradient(rgba(214, 214, 214, 0.39), rgba(214, 214, 214, 0.039)), url("svg_.svg");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 150px; */
+    position: relative;
+}
+
+.main-div{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    justify-content: center;
+}
+
+.main-div h4{
+    font-size: 1.4rem;
+    letter-spacing: 10px;
+    color: rgb(109, 108, 108);
+}
+
+.main-div h1{
+    font-size: 8rem;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.main-div p{
+    line-height: 44px;
+    font-size: 1.5rem;
+    color: rgb(150, 150, 150);
+    letter-spacing: 1.5px;
+    font-style: italic;
+}
+
+.down{
+    position: absolute;
+    bottom: 80px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: solid 3px rgb(150, 150, 150);
+    cursor: pointer;
+}
+
+.box{
+    font-size: 2rem;
+    color: rgb(150, 150, 150);
+    position: absolute;
+    bottom: 18px;
+    left: 25px;
+}
+
+.education{
+    background: linear-gradient(rgba(214, 214, 214, 0.39), rgba(214, 214, 214, 0.039)), url("svg_.svg");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+}
+
+.edu-heading{
+    color: rgb(150, 150, 150);
+    text-align: center;
+    margin-block: 50px;
+}
+
+.edu-heading h1{
+    font-size: 6rem;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.study{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    align-items: center;
+}
+
+.ledu h4{
+    line-height: 44px;
+    font-size: 1.5rem;
+    color: rgb(150, 150, 150);
+    letter-spacing: 1.5px;
+    font-style: italic;
+}
+
+.redu h4{
+    line-height: 44px;
+    font-size: 1.5rem;
+    color: rgb(150, 150, 150);
+    letter-spacing: 1.5px;
+    font-style: italic;
+}
+
+.line{
+    width: 3px;
+    height: 300px;
+    background-color: rgb(150, 150, 150);
+}
+
+.downn{
+    position: absolute;
+    bottom: 80px;
+    left: 47.4%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: solid 3px rgb(150, 150, 150);
+    cursor: pointer;
+}
+
+.boxx{
+    font-size: 2rem;
+    color: rgb(150, 150, 150);
+    position: absolute;
+    bottom: 18px;
+    left: 25px;
+}
+
+.reveal{
+ position: relative;
+ transform: translateY(100px);
+ opacity: 0;
+ transition: all 2s ease;
+}
+
+.reveal.active{
+ transform: translateY(0px);
+ opacity: 1;
+}
+
+/* .skills{
+    background: linear-gradient(rgba(214, 214, 214, 0.39), rgba(214, 214, 214, 0.039)), url("svg_.svg");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+} */
+
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+/* .skill-head h1{
+    font-size: 6rem;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.circle{
+    width: 160px;
+    height: 160px;
+    position: relative;
+}
+
+.outer-circle{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7)
+}
+
+.inner-circle{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+}
+
+#number{
+    font-weight: 700px;
+    color: rgb(150, 150, 150);
+}
+
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.skill-set{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.progress{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.skill-text{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: rgb(150, 150, 150);
+}
+
+.downnn{
+    position: absolute;
+    bottom: 80px;
+    left: 47.4%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: solid 3px rgb(150, 150, 150);
+    cursor: pointer;
+}
+
+.boxxx{
+    font-size: 2rem;
+    color: rgb(150, 150, 150);
+    position: absolute;
+    bottom: 18px;
+    left: 25px;
+} */
+
+.skills{
+    background: linear-gradient(rgba(214, 214, 214, 0.39), rgba(214, 214, 214, 0.039)), url("svg_.svg");
+    background-size: cover;
+    padding-block: 15rem;
+}
+
+.webdev {
+    width: 57px;
+}
+
+.skills-container {
+    margin-block: 40px;
+    padding-inline: var(--inline-padding);
+    text-align: center;
+}
+
+.skills-logo-group {
+    margin-bottom: 10px;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+li h4 {
+    padding: 4px;
+}
+
+#skills-heading {
+    color: rgb(150, 150, 150);
+    padding-block: 40px;
+    font-size: 6rem;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.skills-level-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 50px, var(--inline-padding);
+
+
+}
+
+.skills-level-container li {
+    width: 45%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.bar {
+    background: rgb(134, 132, 132);
+    display: block;
+    height: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 100%;
+
+}
+
+.bar span {
+    color: #f8f9fa;
+    text-align: center;
+    height: 20px;
+    float: left;
+
+}
+
+.html {
+    width: 90%;
+
+}
+
+.css {
+    width: 60%;
+
+}
+
+.js {
+
+    width: 60%;
+}
+
+.postgresql {
+
+    width: 70%;
+}
+
+.c-cpp {
+
+    width: 70%;
+}
+
+.python {
+    width: 80%;
+}
+
+.java {
+    width: 75%;
+
+}
+
+.animating-skill {
+    animation: skill-animation 3s;
+}
+
+.skill-color {
+    background: rgb(150, 150, 150);
+    animation-timing-function: linear;
+}
+
+@keyframes skill-animation {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: inherit;
+    }
+}
+
+.webdev {
+    width: 57px;
+}
+
+.skills-container {
+    margin-block: 40px;
+    padding-inline: var(--inline-padding);
+    text-align: center;
+}
+
+.skills-logo-group {
+    margin-bottom: 10px;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.skills-logo-group img{
+    height: 3rem;
+}
+
+li h4 {
+    padding: 4px;
+}
+
+#skills-heading {
+
+    margin-bottom: 8px;
+}
+
+.skills-level-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 50px, var(--inline-padding);
+
+
+}
+
+.skills-level-container li {
+    width: 45%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.bar {
+    background: rgb(196, 196, 196);
+    display: block;
+    height: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 100%;
+
+}
+
+.bar span {
+    color: #f8f9fa;
+    text-align: center;
+    height: 20px;
+    float: left;
+
+}
+
+.html {
+    width: 90%;
+
+}
+
+.css {
+    width: 60%;
+
+}
+
+.js {
+
+    width: 60%;
+}
+
+.postgresql {
+
+    width: 70%;
+}
+
+.c-cpp {
+
+    width: 70%;
+}
+
+.python {
+    width: 80%;
+}
+
+.java {
+    width: 75%;
+
+}
+
+.animating-skill {
+    animation: skill-animation 2s;
+}
+
+.skill-color {
+    background: rgb(150, 150, 150);
+    animation-timing-function: linear;
+}
+
+@keyframes skill-animation {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: inherit;
+    }
+}
+

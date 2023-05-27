@@ -1,0 +1,123 @@
+.my_name{
+    animation-name: slideright;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes slideright{
+    from{
+        transform: translateX(-100px);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+.head-text{
+    animation-name: slideleft;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes slideleft{
+    from{
+        transform: translateX(100px);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+.circle1{
+    fill: none;
+    stroke: rgb(150, 150, 150);
+    stroke-width: 20px;
+    stroke-dasharray: 435;
+    stroke-dashoffset: 435;
+    animation: progress 2s linear forwards;
+}
+
+@keyframes progress{
+    100%{
+        stroke-dashoffset: 43;
+    }
+}
+
+.circle2{
+    fill: none;
+    stroke: rgb(150, 150, 150);
+    stroke-width: 20px;
+    stroke-dasharray: 435;
+    stroke-dashoffset: 435;
+    animation: progresss 2s linear forwards;
+}
+
+@keyframes progresss{
+    100%{
+        stroke-dashoffset: 100;
+    }
+}
+
+.circle3{
+    fill: none;
+    stroke: rgb(150, 150, 150);
+    stroke-width: 20px;
+    stroke-dasharray: 435;
+    stroke-dashoffset: 435;
+    animation: progres 2s linear forwards;
+}
+
+@keyframes progres{
+    100%{
+        stroke-dashoffset: 217;
+    }
+}
+
+.circle4{
+    fill: none;
+    stroke: rgb(150, 150, 150);
+    stroke-width: 20px;
+    stroke-dasharray: 435;
+    stroke-dashoffset: 435;
+    animation: progre 2s linear forwards;
+}
+
+@keyframes progre{
+    100%{
+        stroke-dashoffset: 217;
+    }
+}
+
+.circle5{
+    fill: none;
+    stroke: rgb(150, 150, 150);
+    stroke-width: 20px;
+    stroke-dasharray: 435;
+    stroke-dashoffset: 435;
+    animation: progr 2s linear forwards;
+}
+
+@keyframes progr{
+    100%{
+        stroke-dashoffset: 108;
+    }
+}
+
+.circle6{
+    fill: none;
+    stroke: rgb(150, 150, 150);
+    stroke-width: 20px;
+    stroke-dasharray: 435;
+    stroke-dashoffset: 435;
+    animation: prog 2s linear forwards;
+}
+
+@keyframes prog{
+    100%{
+        stroke-dashoffset: 150;
+    }
+}
